@@ -1,29 +1,28 @@
-\documentstyle [line] {res}
+\documentclass[letterpaper,11pt]{article}
+\usepackage[pagesetup]{tucv}
+\fancyfoot[C]{\thepage}
 
-\setlength {\oddsidemargin} {-0.5in}
-\setlength {\evensidemargin} {0.0in}
-\setlength {\textwidth} {6.5in}
-\setlength {\topmargin} {0.0in}
-\setlength {\textheight} {10in}
+\begin{document}
 
-\begin {document}
-  \name {\LARGE{\textbf {Philip B. Tricca}}}
-  \address {916 Westcott St., Syracuse NY, 13210}
-  \address {flihp@twobit.us, 978.766.5515}
-  \begin {resume}
-    % qualification summary
-    \section {Qualification Summary} Computer Engineer with 6 years experience working in a government research environment.
+% Page heading and name/contact info table
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Philip B. Tricca} & 978.766.5515 \\
+916 Westcott St. & flihp@twobit.us \\
+Syracuse NY, 13210 & twobit.us \\
+\end{tabular*}
+
+% qualification summary
+    \resheading {Qualification Summary}
+    Computer Engineer with 6 years experience working in a government research environment.
 Strong technical, organizational and planning skills.
 Professional, trustworthy and all-around team player.
 Dedicated to technical excellence in software design, implementation and documentation with a specific focus on security.
     % relevant experience
-    \section {Professional Experience}
-    \employer {Air Force Research Lab}
-    \title {Computer Engineer}
-    \dates {2004 - present}
-    \location {Rome, NY}
-    \begin {position}
+    \resheading {Professional Experience}
+    \resemployer {Air Force Research Lab}{Rome,NY}
+    \resjob [
       Performed a mix of work on research efforts relevant to military needs in the area of information systems security and contract management.
+    ]{Computer Engineer}{2004}{2011}
       \begin {itemize}
         \setlength {\itemsep}{1pt}
         \setlength {\parskip}{0pt}
@@ -34,15 +33,10 @@ Dedicated to technical excellence in software design, implementation and documen
       \item Developed and maintained relationships with computer security community through academic conferences and Linux Security Summit (SELinux).
       \item Contract management and technical guidance of cooperative research agreements (IARPA funded) with academic institutions including Cornell and PSU totaling over \$2M.
       \end {itemize}
-    \end {position}
-    \employer {Open Source}
-    \title {Contributor}
-    \begin {format}
-      \title{l}\employer{r}\\
-      \body\\
-    \end {format}
-    \begin {position}
-      Contributed code, testing and/or debugging to open source projects:
+      \resemployer {Open Source}{}
+      \resjob [
+        Contributed code, testing and/or debugging to open source projects:
+      ] {Contributor} {2010} {present}
       \begin {itemize}
         \setlength {\itemsep}{1pt}
         \setlength {\parskip}{0pt}
@@ -51,28 +45,25 @@ Dedicated to technical excellence in software design, implementation and documen
       \item Currently working on Masters Project: integrating mandatory access control with Opus Palladium web browser from UIUC.
       \item SELinux policy for Debian Squeeze release.
       \end {itemize}
-    \end {position}
     % education
-    \section {Education}
-    \employer {Syracuse University}
-    \title {M.S. : Computer Engineering}
-    \dates {2005 - present}
-    \location {\emph {GPA: 3.85}}
-    \begin {position}
-      Focus of study: Software Security and Systems Assurance\\
-      Expected date of graduation: May 2011\\
-      Adviser: Dr. Wenliang (Kevin) Du
-    \end {position}
-    \employer {Syracuse University}
-    \title {B.S. : Computer Engineering}
-    \dates {2000 - 2004}
-    \location {\emph {GPA: 3.78}}
-    \begin {position}
-      Focus of study: Software Engineering.\\
-      Particular interest taken in system level programming (i386 Assembly, C).
-    \end {position}
+    \resheading{Education}
+    \begin{itemize}
+    \item[]
+      \resschool{Syracuse University}{New York}
+      \resdegree[
+        Software Security and Systems Assurance\\
+        Advisor: Dr. Wenliang (Kevin) Du\\
+        Cumulative GPA: 3.85
+      ]{M.S.}{Computer Engineering}{2006 to present}
+      \resdegree[
+        Focus of study: Software Engineering.\\
+        Particular interest in system level programming (i386 Assembly, C).\\
+        Cumulative GPA: 3.78
+      ]{B.S.}{Computer Engineering}{2000 to 2004}
+    \end{itemize}
+
     % awards
-    \section {Awards}
+    \resheading{Awards}
     \begin {itemize}
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
@@ -84,13 +75,13 @@ Dedicated to technical excellence in software design, implementation and documen
     \end {itemize}
 
     % publications
-    \section {Publications}
+    \resheading {Publications}
     {\it A pipeline development toolkit in support of secure information flow goals}.
     Proceedings of the 5th Annual CSIIR Workshop : Cyber Security and Information Intelligence Challenges and Strategies.
     Oak Ridge, Tennessee.
     2009.
     % technical proficiencies
-    \section {Relevant Technical Proficiencies}
+    \resheading {Relevant Technical Proficiencies}
     \begin {itemize}
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
@@ -101,5 +92,4 @@ Dedicated to technical excellence in software design, implementation and documen
       \item Pipeline processing \& system design for deployment on SELinux systems.
       \item Document preparation in \LaTeX.
     \end {itemize}
-  \end {resume}
 \end {document}
