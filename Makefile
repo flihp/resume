@@ -1,8 +1,11 @@
-resume.pdf=pbtricca-resume.pdf
-resume.log=pbtricca-resume.log
-resume.src=pbtricca-resume.tex
+name=pbtricca-resume
+resume.aux=$(name).aux
+resume.log=$(name).log
+resume.pdf=$(name).pdf
+resume.out=$(name).out
+resume.src=$(name).tex
+cleans=$(resume.aux) $(resume.log) $(resume.pdf)
 $(resume.pdf) : $(resume.src)
 	pdflatex -halt-on-error $^
 clean:
-	-rm $(resume.pdf)
-	-rm $(resume.log)
+	-rm $(cleans)
