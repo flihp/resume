@@ -5,6 +5,16 @@
 
 \begin{document}
 
+% renew resjob command to get rid of weird line break in date range
+\RenewDocumentCommand\resjob{ommm}{
+    \resentry[10pt]{
+    \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} \textbf{#2}
+    \IfNoValueTF{#1}
+    {}
+    {\newline #1}
+    }{\mbox {#3 - #4}}
+}
+
 % Page heading and name/contact info table
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Philip B. Tricca}
