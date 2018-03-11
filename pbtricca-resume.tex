@@ -18,18 +18,18 @@
 % Page heading and name/contact info table
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Philip B. Tricca}
-& 978.766.5515 \\
-1000 Escalon Ave.
 & flihp@twobit.us \\
-Sunnyvale CA, 94085
+San Bruno CA, 94066
 & http://twobit.us \\
 \end{tabular*}
 
     \resheading {Qualification Summary}
-    Computer Engineer with 7 years experience working in a government research environment and 3 years architecting, analyzing and building security focused Linux-based products and tools.
-Strong technical, organizational and planning skills.
-Professional, trustworthy and a natural communicator.
-Dedicated to technical excellence in software design, implementation and documentation with a specific focus on security.
+Computer Engineer with 7 years experience working in a government research
+environment and 6 years analyzing, designing  and building security focused
+Linux-based products and tools. Strong technical, organizational and planning
+skills. Professional, trustworthy and a natural communicator. Dedicated to
+technical excellence in software design, implementation and documentation
+with a focus on security.
 
     \resheading {Professional Experience}
     \resemployer {Intel}{\mbox{Santa Clara, CA}}
@@ -41,11 +41,15 @@ Dedicated to technical excellence in software design, implementation and documen
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
       \setlength {\parsep}{0pt}
+      \item Design and implementation of TPM2 Software Stack (TSS2) APIs and
+            plumbing. All API design done collaboratively with the Trusted
+            Computing Group (TCG) TSS2 working group. Source code implementing
+            the TSS2 libraries, system daemon and tools based on TCG
+            specifications published as OSS:
+            \url{https://github.com/tpm2-software/}
       \item Identification of high value usage models for Intel\textsuperscript{\textregistered} SGX.
             A specific focus in this task is analysis and documentation of threat models and impact to system security.
             These designs and documentation were heavily peer reviewed and have moved on to prototype development.
-      \item Successfully pitched project to close the measurement gap caused by traditional boot loader used in Linux environment.
-            Currently in development.
     \end {itemize}
     \resemployer {Citrix Systems}{\mbox{Bedford, MA}}
     \resjob [
@@ -125,6 +129,9 @@ Dedicated to technical excellence in software design, implementation and documen
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
       \setlength {\parsep}{0pt}
+    \item Key Contributor Award.
+      Trusted Computing Group.
+      2017-11-01
     \item Outstanding Engineering Professionalism Award.
       Mohawk Valley Engineers Executive Council.
       2010-02-18
@@ -132,36 +139,51 @@ Dedicated to technical excellence in software design, implementation and documen
     \end {itemize}
 
     \resheading {Public Speaking \& Publications}
-    {\it In-Guest Mechanisms to Strengthen Guest Separation}.
+    \begin{itemize}
+    \item {\it TPM2 Software Stack: Device Driver to Event-Driven Applications}
+    Linux Plumbers Conference
+    Los Angeles, California.
+    2017
+    URL: \url {http://www.linuxplumbersconf.org/2017/ocw/sessions/4675.html}
+    \item {\it Securing Embedded Linux Systems with TPM2}.
+    Embedded Linux Conference
+    Portland, Oregon.
+    2017.
+    URL: \url {https://www.youtube.com/watch?v=0qu9R7Tlw9o}
+    \item {\it In-Guest Mechanisms to Strengthen Guest Separation}.
     Xen Summit colocated with LinuxCon.
     Edinburgh, Scotland,
     2013.
-    URL: \url {https://www.youtube.com/watch?v=6Q8mlTBn-ZI}\newline\newline
-    {\it A pipeline development toolkit in support of secure information flow goals}.
+    URL: \url {https://www.youtube.com/watch?v=6Q8mlTBn-ZI}
+    \item {\it A pipeline development toolkit in support of secure information flow goals}.
     Proceedings of the 5th Annual CSIIR Workshop : Cyber Security and Information Intelligence Challenges and Strategies.
     Oak Ridge, Tennessee.
-    2009.\newline\newline
+    2009.
+    \end{itemize}
     Representative writing samples:
     \begin {itemize}
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
       \setlength {\parsep}{0pt}
     \item
+      TCG TSS2 async APIs and event driven programming:
+      \url {https://blog.twobit.us/2017/10/15/tcg-tss2-async-api-event-driven/}
+    \item
       TrEE vs TCG: Dueling TPM2 Specs:
-      \url {http://twobit.us/2015/11/tree-vs-tcg/}
+      \url {http://blog.twobit.us/2015/11/tree-vs-tcg/}
     \item
       Attaching a TPM on the LPC:
-      \url {http://twobit.us/2015/02/attaching-tpm-on-lpc/}
+      \url {http://blog.twobit.us/2015/02/attaching-tpm-on-lpc/}
     \item
       Measured launch on OE-Core:
-      \url {http://twobit.us/blog/2013/01/meta-measured/}
+      \url {http://blog.twobit.us/2013/01/meta-measured/}
     \item
       An on-going series documenting my masters project implementing the sVirt architecture on XenClient:
-      \url {http://twobit.us/blog/tag/mastersproject/}
+      \url {http://blog.twobit.us/tag/mastersproject/}
     \item
       A two part series describing the ``why'' and ``how'' of configuring a network driver domain on Xen:
-      \url {http://twobit.us/blog/2010/07/xen-network-driver-domain-wh/}
-      \url {http://twobit.us/blog/2010/07/xen-network-driver-domain-how/}
+      \url {http://blog.twobit.us/2010/07/xen-network-driver-domain-wh/}
+      \url {http://blog.twobit.us/2010/07/xen-network-driver-domain-how/}
     \end {itemize}
 
     \resheading {Relevant Technical Proficiencies}
@@ -169,6 +191,15 @@ Dedicated to technical excellence in software design, implementation and documen
       \setlength {\itemsep}{1pt}
       \setlength {\parskip}{0pt}
       \setlength {\parsep}{0pt}
+      \item TPM2 \& TCG TSS2 API and infrastructure concepts and implementation
+          on Linux and Windows.
+      \item GNU Autotools build and test harness.
+      \item Test strategies and test driven development concepts.
+      \item Continuous integration and test automation: travis-ci, coveralls,
+          cmocka etc.
+      \item Open Source Software development and project management /
+          maintainership with 3 years experience maintaining large C code
+          base.
       \item Proficiency with Open Embedded build system and the construction of meta layers / distros.
       \item Flask policy development and system configuration (SELinux / XSM).
       \item Appropriate usage of the TPM for constructing measured software systems.
